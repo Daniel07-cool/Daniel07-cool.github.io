@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inscripción a Salida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class = "row">
+            <div class ="col-2 col-md-4" ></div>
+            <div class ="col-8 col-md-4 align-self-center border" style="margin-top:10%; padding-top: 10px; padding-bottom:16px;">
+                <form>
+                <h1>Inscripción a Salida</h1>
+                <div>
+                    <div class="mb-3">
+                    <!-- Segun el departamento elegido se filtran las actividades y categorias -->
+                        <label for="exampleInputEmail1" class="form-label">Seleccione un departamento:</label>
+                           <select name="Departamento">
+                             <option>Artigas</option>
+                             <option>Canelones</option>
+                             <option>Cerro Largo</option>
+                             <option>Colonia</option>
+                             <option>Durazno</option>
+                             <option>Flores</option>
+                             <option>Florida</option>
+                             <option>Lavalleja</option>
+                             <option>Maldonado</option>
+                             <option>Montevideo</option>
+                             <option>Paysandú</option>
+                             <option>Río Negro</option>
+                             <option>Rivera</option>
+                             <option>Rocha</option>
+                             <option>Salto</option>
+                             <option>San José</option>
+                             <option>Soriano</option>
+                             <option>Tacuarembó</option>
+                             <option>Treinta y Tres</option>
+                           </select>
+                    </div>
+                    <div class="mb-3">
+                    <!-- Segun la categoria elegida se filtran las actividades y departamentos -->
+                        <label for="exampleInputEmail1" class="form-label">Seleccione una categoría:</label>
+                           <select name="Categoria">
+                             <option>Cat 1</option>
+                             <option>Cat 2</option>
+                           </select>
+                    </div>
+                    <div class="mb-3">
+                    <!-- Segun la actividad elegida se filtran las salidas -->
+                        <label for="exampleInputEmail1" class="form-label">Actividades Turísticas</label>
+                           <select name="Actividad">
+                             <option>Act 1</option>
+                             <option>Act 2</option>
+                           </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Salidas Turísticas</label>
+                           <select name="Salida">
+                             <option>Sal 1</option>
+                             <option>Sal 2</option>
+                           </select>
+                    </div>
+                </div>
+                <!-- Luego de elegir la salida se muestran datos básicos(lugar y fecha de salida) -->
+                    <div class="row">
+                      <div class="col-6 col-md-6">
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Lugar de Salida</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                      </div>
+                      <div class="col-6 col-md-6">
+                          <div class="mb-3">
+                              <label for="Fechadenacimiento" class="form-label">Fecha de Salida</label>
+                              <input id="Fechadenacimiento" type="date" class="form-control">
+                          </div>
+                      </div>
+                	</div>
+                      <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Cantidad de Turistas</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="row">
+                      <!-- Sí se elige "por paquete" se muestra los paquetes. De lo contrario debe estar oculto ese campo -->
+                        <div class="col-6 col-md-6">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Forma de Pago</label>
+                              <select name="Salida">
+                               <option>General</option>
+                               <option>Por Paquete</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Paquetes</label>
+                              <select name="Paquete">
+                               <option>Paq 1</option>
+                               <option>Paq 2</option>
+                              </select>
+                            </div>
+                        </div>
+                	</div>
+                    <!-- Se muestra el costo según lo elegido anteriormente -->
+                    <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Costo</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      
+                      
+                    <button type="submit" style="margin-top: 10px; width: 100%;" class="btn btn-primary">Confirmar</button>
+                </form>
+            </div>
+            <div class ="col-2 col-md-4" ></div>
+        </div>
+      </div>
+  </body>
+</html>
+
+
